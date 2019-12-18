@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  feelings-app
 //
 //  Created by Juan Luque on 12/17/19.
@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var picture: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 
