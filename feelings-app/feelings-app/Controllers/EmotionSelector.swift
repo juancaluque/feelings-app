@@ -19,7 +19,10 @@ class EmotionSelector: UIViewController {
     }
     
     @IBAction func emotionWasSelected(sender: UIButton){
-    print(sender.titleLabel!.text!)
+        if delegate != nil {
+            delegate?.userDidChoose(color: sender.backgroundColor!, withName: sender.titleLabel!.text!)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 
 }
